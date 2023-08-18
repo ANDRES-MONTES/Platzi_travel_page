@@ -1,0 +1,1325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(4px); }
+  }
+
+ @keyframes vibrate-y {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-6px); }
+    50% { transform: translateY(6px); }
+    75% { transform: translateY(-6px); }
+    100% { transform: translateY(6px); }
+  }
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color:#CC2D4A;
+    --secondary-color:#8FA206;
+    --terciary-color: #61AEC9;
+}
+
+body .main-home {
+    width: 100%;
+    height: 587px;
+    background-image: url('./assets/Rectangle\ 20\ \(1\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.main-header-desktop {
+    width: 100%;
+    height: 75px;
+    padding: 0 25px;
+    display: none;
+    
+}
+
+.main-header-desktop nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header-desktop nav div a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color:var(--primary-color);
+}
+
+
+
+.main-header-desktop .header-main-links {
+    display: flex;
+}
+
+.main-header-desktop .header-main-links a {
+    margin-left: 55px;
+}
+
+.main-header-desktop nav .header-logos a {
+    margin-left: 20px;
+}
+
+
+
+
+.main-header-desktop nav .header-logos .search-logo-header {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/Search-red.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.main-header-desktop nav .header-logos .dark-logo-header {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/luna.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-header-desktop nav .header-logos .profile-logo-header {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/User.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.main-home-search {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.main-home .main-buton-dark {
+    position: absolute;
+    left: calc(100% - 80px);
+    top: calc(0% + 10px);
+    width: 65px;
+    height: 42px;
+    border-radius: 25px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.main-home .main-buton-dark span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/luna.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-search-bar label {
+    position: relative;
+    display: inline-block;
+}
+
+
+.main-home-search .title-to-desktop {
+    display: none;
+    font-family:'Montserrat', sans-serif ;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+
+
+body .main-home .main-search-bar input{
+    border: none;
+    padding: 12px;
+    width: 344px;
+    height: 49px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0px 2px 7px 0px #00000040;
+    text-align: center;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 15px;
+    line-height: 18.9px;
+    background-image: url('./assets/Search-red.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 21px;
+}
+
+body .main-home .main-search-bar input:hover {
+    width: 444px;
+    border:solid 3px var(--primary-color);
+}
+
+body .main-home .main-search-bar input::placeholder {
+    color: rgb(197, 196, 196);
+}
+
+
+body .main-home .main-button {
+    width: 191px;
+    height: 48px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height:18.29px;
+    color: var(--primary-color);
+    border-radius: 25px;
+    border: none;
+    background-color:#FFFFFF;
+    box-shadow: 0px 2px 7px 0px #00000040; 
+}
+
+
+
+body .main-home .main-button:hover {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    scale: 1.2;
+    animation: vibrate 1.5s linear infinite;
+
+}
+    
+
+body .main-cards .main-cards-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.main-cards-container {
+    height: 284px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+.main-cards-container .cards-info {
+    width: 155px;
+    height: 188px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    box-shadow: 0px 2px 7px 0px #00000040;
+
+}
+
+.main-cards-container .cards-info:hover {
+    animation: vibrate-y 2.5s linear infinite;
+    scale: 1.2;
+
+}
+
+
+.main-cards-container .cards-info-two {
+    width: 155px;
+    height: 188px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 2px 7px 0px #00000040;
+}
+
+.main-cards-container .cards-info-two:hover {
+    animation: vibrate 2.5s linear infinite;
+    scale: 1.2;
+
+
+}
+
+.main-cards-container .cards-info img {
+    width: 155px;
+    height: 109px;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-cards-container .cards-info-two img {
+    width: 155px;
+    height: 109px;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-cards-container .cards-info .cards-info-title, .cards-info-title-two {
+    padding: 8px;
+}
+
+.main-cards-container .cards-info .cards-info-title h3 {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.main-cards-container .cards-info .cards-info-title p {
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 11px;
+    color: #FFFFFF;
+}
+
+.main-cards-container .cards-info-two .cards-info-title-two h3 {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 17px;
+    color: var(--terciary-color);
+    margin-bottom: 8px;
+}
+
+.main-cards-container .cards-info-two .cards-info-title-two p {
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 11px;
+    color: var(--terciary-color);
+}
+
+
+.main-renta-section h2 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--primary-color);
+}
+
+.main-renta-section .main-container-renta {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.main-renta-section .main-container-renta .cards-renta-info {
+    height: 402px;
+    width: 335px;
+    background-image: url('./assets/chicago.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-attachment: fixed;
+}
+
+.cards-renta-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.cards-renta-infoparrafo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+
+
+}
+
+.main-renta-section .main-container-renta  .cards-renta-info-2 {
+    height: 402px;
+    width: 335px;
+    background-image: url('./assets/LA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-attachment: fixed;    
+}
+
+
+.main-renta-section .main-container-renta .cards-renta-info-3 {
+    height: 402px;
+    width: 335px;
+    background-image: url('./assets/miami.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-attachment: fixed;
+
+}
+
+.main-renta-section .main-container-renta .cards-renta-info-4 {
+    height: 402px;
+    width: 335px;
+    background-image: url('./assets/bali.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-attachment:fixed;
+}
+
+.main-ask-questions {
+    padding: 20px;
+}
+
+.main-ask-questions h2 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--primary-color);
+}
+
+.ask-questions-container {
+    padding-left: 40px;
+}
+
+.main-ask-questions .ask-questions-container .ask-questions-title{
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--primary-color);
+}
+
+.main-ask-questions .ask-questions-container .ask-questions-parrafo {
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: black;
+    margin-top: 10px;
+
+}
+
+
+.container-ask-main-questions {
+    margin-top: 30px;
+}
+
+footer .main-footer-container {
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #E5E5E559;
+    background-color: rgb(254, 251, 251);
+    
+
+}
+
+.main-footer-container h2 {
+    font-family:'Montserrat', sans-serif ;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color:#CCCCCC;
+    margin-bottom: 25px;
+    
+}
+
+.main-footer-links .links-container-info li {
+    list-style-type: none;   
+    margin-top: 10px;
+}
+
+.main-footer-links .links-container-info li a {
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color:#CCCCCC;
+ }
+
+ .main-footer-icons {
+    margin-top: 20px;
+
+ }
+
+.main-footer-icons .twitter-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('../css/assets/twitter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-footer-icons .instagram-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url('./assets/instagram\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+footer .main-tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-tab-bar .bar-home-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/Home.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-tab-bar  .bar-home-icon:hover {
+    background-image: url('./assets/Home-red.svg');
+}
+
+
+
+.main-tab-bar .bar-search-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/Search.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-tab-bar .bar-search-icon:hover {
+    background-image: url('./assets/Search-red.svg');
+}
+
+.main-tab-bar .bar-love-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/Heart.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-tab-bar .bar-love-icon:hover {
+    background-image: url('./assets/Heart-red.svg');
+}
+
+.main-tab-bar .bar-profile-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/User.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main-tab-bar .bar-profile-icon:hover {
+    background-image: url('./assets/User-red.svg');
+}
+
+@media screen and (min-width:900px) {
+    .main-header-desktop {
+        display:block;
+        position: fixed;
+        background-color: white;
+    }
+    .main-home  .main-buton-dark {
+        display: none;
+    }
+    .main-home .main-search-bar {
+        display: none;
+    }
+
+    .main-home .title-to-desktop {
+        display: block;
+    }
+
+    .main-home .main-home-search {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+
+    footer .main-tab-bar {
+        display: none
+    }
+
+    .main-cards .main-cards-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-renta-section .main-container-renta {
+        max-width: 850px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .main-renta-section {
+        margin-bottom: 20px;
+    }
+
+
+    .main-renta-section .main-container-renta {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(4, 200px);
+        justify-content: center;
+    }
+
+    .main-renta-section .main-container-renta .cards-renta-info {
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / 3 / 4;
+        object-fit: contain;
+    }
+
+    .main-renta-section .main-container-renta .cards-renta-info-2 {
+        width: 100%;
+        height: 100%;
+        grid-area: 3 / 1 / 5 / 2;
+        object-fit: contain;
+    }
+
+    .main-renta-section .main-container-renta .cards-renta-info-3 {
+        width: 100%;
+        height: 100%;
+        grid-area: 3 / 2 / 4 / 4 ;
+        object-fit: contain;
+    }
+
+    .main-renta-section .main-container-renta .cards-renta-info-4 {
+        width: 100%;
+        height: 100%;
+        grid-area: 4 / 2 / 5 / 4 ;
+        object-fit: contain;
+    }
+
+   
+
+}
+
+
+/*EN ESTA SECCION EMPIEZA TODO LA PROFRAMACION DEL MODO OSCURO*/
+
+
+
+body .main-home-dark {
+    width: 100%;
+    height: 587px;
+    background-image: url('./assets/Rectangle\ 20\ \(1\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.main-header-desktop-dark {
+    width: 100%;
+    height: 75px;
+    padding: 0 25px;
+    display: none;
+    
+}
+
+.main-header-desktop-dark nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header-desktop-dark nav div a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color:white;
+}
+
+
+
+.main-header-desktop-dark .header-main-links-dark {
+    display: flex;
+}
+
+.main-header-desktop-dark .header-main-links-dark a {
+    margin-left: 55px;
+}
+
+.main-header-desktop-dark nav .header-logos-dark a {
+    margin-left: 20px;
+}
+
+
+
+
+.main-header-desktop-dark nav .header-logos-dark .search-logo-header-dark {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/Search-red.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.main-header-desktop-dark nav .header-logos-dark .dark-logo-header-dark {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/luna.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-header-desktop-dark nav .header-logos-dark .profile-logo-header-dark {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/User.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.main-home-search-dark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.main-home-dark .main-buton-dark-dark {
+    position: absolute;
+    left: calc(100% - 80px);
+    top: calc(0% + 10px);
+    width: 65px;
+    height: 42px;
+    border-radius: 25px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.main-home-dark .main-buton-dark-dark span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/luna.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-search-bar-dark label {
+    position: relative;
+    display: inline-block;
+}
+
+
+.main-home-search-dark .title-to-desktop-dark {
+    display: none;
+    font-family:'Montserrat', sans-serif ;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+
+
+body .main-home-dark .main-search-bar-dark input{
+    border: none;
+    padding: 12px;
+    width: 344px;
+    height: 49px;
+    background: #1F2937;
+    border-radius: 25px;
+    box-shadow: 0px 2px 7px 0px #00000040;
+    text-align: center;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 15px;
+    line-height: 18.9px;
+    background-image: url('./assets/Search-red.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 21px;
+    color:white;
+}
+
+body .main-home-dark .main-search-bar-dark input:hover {
+    width: 444px;
+    border:solid 3px var(--primary-color);
+}
+
+body .main-home-dark .main-search-bar-dark input::placeholder {
+    color: rgb(181, 172, 172);
+}
+
+
+body .main-home-dark .main-button-dark {
+    width: 191px;
+    height: 48px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height:18.29px;
+    color: #1F2937;
+    border-radius: 25px;
+    border: none;
+    background-color:#FFFFFF;
+    box-shadow: 0px 2px 7px 0px #00000040; 
+}
+
+
+
+body .main-home-dark .main-button-dark:hover {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    scale: 1.2;
+    animation: vibrate 1.5s linear infinite;
+
+}
+  
+
+.main-cards-dark {
+    background-color: #1F2937;
+}
+
+body .main-cards-dark .main-cards-title-dark {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: white;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.main-cards-container-dark {
+    height: 284px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+.main-cards-container-dark .cards-info-dark {
+    width: 155px;
+    height: 188px;
+    background-color:#374151;
+    border-radius: 15px;
+    box-shadow: 0px 2px 7px 0px #00000040;
+
+}
+
+.main-cards-container-dark .cards-info-dark:hover {
+    animation: vibrate-y 2.5s linear infinite;
+    scale: 1.2;
+
+}
+
+
+.main-cards-container-dark .cards-info-two-dark {
+    width: 155px;
+    height: 188px;
+    background-color: #1F2937;
+    border-radius: 15px;
+    box-shadow: 0px 2px 7px 0px #00000040;
+}
+
+.main-cards-container-dark .cards-info-two-dark:hover {
+    animation: vibrate 2.5s linear infinite;
+    scale: 1.2;
+
+
+}
+
+.main-cards-container-dark .cards-info-dark img {
+    width: 155px;
+    height: 109px;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-cards-container-dark .cards-info-two-dark img {
+    width: 155px;
+    height: 109px;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-cards-container-dark .cards-info-dark .cards-info-title-dark, .cards-info-title-two-dark {
+    padding: 8px;
+}
+
+.main-cards-container-dark .cards-info-dark .cards-info-title-dark h3 {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.main-cards-container-dark .cards-info-dark .cards-info-title-dark p {
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 11px;
+    color: #FFFFFF;
+}
+
+.main-cards-container-dark .cards-info-two-dark .cards-info-title-two-dark h3 {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 17px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.main-cards-container-dark .cards-info-two-dark .cards-info-title-two-dark p {
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 11px;
+    color: white;
+}
+
+
+.main-renta-section-dark {
+    background-color: #1F2937;
+}
+
+.main-renta-section-dark h2 {
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: white;
+}
+
+.main-renta-section-dark .main-container-renta-dark {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.main-renta-section-dark .main-container-renta-dark .cards-renta-info-dark {
+    height: 402px;
+    width: 335px;
+    background-image: url('./assets/chicago.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-attachment: fixed;
+}
+
+.cards-renta-title-dark {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.cards-renta-infoparrafo-dark {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+
+
+}
+
+.main-renta-section-dark .main-container-renta-dark  .cards-renta-info-2-dark {
+    height: 402px;
+    width: 335px;
+    background-image: url('./assets/LA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-attachment: fixed;    
+}
+
+
+.main-renta-section-dark .main-container-renta-dark .cards-renta-info-3-dark {
+    height: 402px;
+    width: 335px;
+    background-image: url('./assets/miami.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-attachment: fixed;
+
+}
+
+.main-renta-section-dark .main-container-renta-dark .cards-renta-info-4-dark {
+    height: 402px;
+    width: 335px;
+    background-image: url('./assets/bali.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-attachment:fixed;
+}
+
+.main-ask-questions-dark {
+    padding: 20px;
+    background-color: #1F2937;
+}
+
+.main-ask-questions-dark h2 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: white;
+}
+
+.ask-questions-container-dark {
+    padding-left: 40px;
+}
+
+.main-ask-questions-dark .ask-questions-container-dark .ask-questions-title-dark{
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+.main-ask-questions-dark .ask-questions-container-dark .ask-questions-parrafo-dark {
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color:white;
+    margin-top: 10px;
+
+}
+
+
+.container-ask-main-questions-dark {
+    margin-top: 30px;
+}
+
+footer .main-footer-container-dark {
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #E5E5E559;
+    background-color: rgb(254, 251, 251);
+    
+
+}
+
+.main-footer-container-dark h2 {
+    font-family:'Montserrat', sans-serif ;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color:#CCCCCC;
+    margin-bottom: 25px;
+    
+}
+
+.main-footer-links-dark .links-container-info-dark li {
+    list-style-type: none;   
+    margin-top: 10px;
+}
+
+.main-footer-links-dark .links-container-info-dark li a {
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color:#CCCCCC;
+ }
+
+ .main-footer-icons-dark {
+    margin-top: 20px;
+
+ }
+
+.main-footer-icons-dark .twitter-icon-dark {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('../css/assets/twitter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-footer-icons-dark .instagram-icon-dark {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url('./assets/instagram\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+footer .main-tab-bar-dark {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-tab-bar-dark .bar-home-icon-dark {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/Home.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-tab-bar-dark  .bar-home-icon-dark:hover {
+    background-image: url('./assets/Home-red.svg');
+}
+
+
+
+.main-tab-bar-dark .bar-search-icon-dark {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/Search.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-tab-bar-dark .bar-search-icon-dark:hover {
+    background-image: url('./assets/Search-red.svg');
+}
+
+.main-tab-bar-dark .bar-love-icon-dark {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/Heart.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-tab-bar-dark .bar-love-icon-dark:hover {
+    background-image: url('./assets/Heart-red.svg');
+}
+
+.main-tab-bar-dark .bar-profile-icon-dark {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/User.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main-tab-bar-dark .bar-profile-icon-dark:hover {
+    background-image: url('./assets/User-red.svg');
+}
+
+@media screen and (min-width:900px) {
+    .main-header-desktop-dark {
+        display:block;
+        position: fixed;
+        background-color: #1F2937;
+    }
+    .main-home-dark  .main-buton-dark-dark {
+        display: none;
+    }
+    .main-home-dark .main-search-bar-dark {
+        display: none;
+    }
+
+    .main-home-dark .title-to-desktop-dark {
+        display: block;
+    }
+
+    .main-home-dark .main-home-search-dark {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+
+    footer .main-tab-bar-dark {
+        display: none
+    }
+
+    .main-cards-dark .main-cards-container-dark {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-renta-section-dark .main-container-renta-dark {
+        max-width: 850px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .main-renta-section-dark {
+        padding-bottom: 20px;
+    }
+
+
+    .main-renta-section-dark .main-container-renta-dark {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(4, 200px);
+        justify-content: center;
+    }
+
+    .main-renta-section-dark .main-container-renta-dark .cards-renta-info-dark {
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / 3 / 4;
+        object-fit: contain;
+    }
+
+    .main-renta-section-dark .main-container-renta-dark .cards-renta-info-2-dark {
+        width: 100%;
+        height: 100%;
+        grid-area: 3 / 1 / 5 / 2;
+        object-fit: contain;
+    }
+
+    .main-renta-section-dark .main-container-renta-dark .cards-renta-info-3-dark {
+        width: 100%;
+        height: 100%;
+        grid-area: 3 / 2 / 4 / 4 ;
+        object-fit: contain;
+    }
+
+    .main-renta-section-dark .main-container-renta-dark .cards-renta-info-4-dark {
+        width: 100%;
+        height: 100%;
+        grid-area: 4 / 2 / 5 / 4 ;
+        object-fit: contain;
+    }
+
+   
+
+}
